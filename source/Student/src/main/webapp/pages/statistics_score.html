@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Statistics Page</title>
+<link href="../css/statistic.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="window">
+		<div class="searchbox tit">
+			成绩统计：<select id="select_subject">
+				<option value="sub_loading">加载中...</option>
+			</select>
+		</div>
+	</div>
+	<div class="sprofile">
+		<div class="num_sprofile">
+			<!-- 分段人数统计 -->
+			<canvas id="numChart"></canvas>
+		</div>
+		<div class="pass_sprofile">
+			<!-- 及格比例统计 -->
+			<canvas id="passChart"></canvas>
+		</div>
+	</div>
+	<div>
+		<table id="table"
+			style="width: 100%; border: solid 2px #33A1C9; color: #696969">
+			<tr align="center">
+				<td width="60">课程名称：</td>
+				<td width="60" id="subject_name">--</td>
+				<td width="60">平均分：</td>
+				<td width="60" id="avg_score">--</td>
+			</tr>
+			<tr align="center">
+				<td width="60">任课教师：</td>
+				<td width="60" id="subject_teacher">--</td>
+				<td width="60">最高分：</td>
+				<td width="60" id="max_score">--</td>
+			</tr>
+			<tr align="center">
+				<td width="60">学生人数：</td>
+				<td width="60" id="student_num">--</td>
+				<td width="60">最低分：</td>
+				<td width="60" id="min_score">--</td>
+			</tr>
+		</table>
+	</div>
+	<script src="../js/jquery-3.7.0.min.js" type="text/javascript"></script>
+	<script src="../js/chart.umd.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../js/statistic.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.window {
+	margin-top: 20px;
+}
+
+.tit {
+	color: #999;
+	font-family: "黑体";
+	font-size: 36px;
+	width: 240px;
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+	margin-bottom: 32px;
+	text-align: center;
+}
+
+.searchbox {
+	width: 660px;
+	height: 40px;
+	margin-bottom: 50px;
+}
+
+.sprofile {
+	width: 100%;
+	overflow: hidden;
+}
+
+.num_sprofile {
+	float: left;
+	width: 60%;
+}
+
+.pass_sprofile {
+	float: left;
+	width: 27%;
+}
+
+.loading {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+	-webkit-filter: grey;
+}

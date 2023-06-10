@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Statistics Page</title>
+<link href="../css/statistic.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="window">
+		<div class="searchbox tit">
+			反馈结果：<select id="select_subject">
+				<option value="sub_loading">加载中...</option>
+			</select>
+		</div>
+	</div>
+	<div style="width: 100%; text-align: center;">
+		<!-- 反馈雷达图及反馈率环图 -->
+		<div style="width: 32%; display: inline-block;">
+			<canvas id="feedbackChart"></canvas>
+		</div>
+		<div style="width: 32%; display: inline-block;">
+			<canvas id="feedbackRateChart"></canvas>
+		</div>
+	</div>
+	<div>
+		<table id="table"
+			style="width: 100%; border: solid 2px #33A1C9; color: #696969">
+			<tr align="center">
+				<td width="60">课程名称</td>
+				<td width="60">任课教师</td>
+				<td width="60">学生人数</td>
+				<td width="60">反馈人数</td>
+			</tr>
+			<tr align="center">
+				<td width="60" id="subject_name">--</td>
+				<td width="60" id="teacher_name">--</td>
+				<td width="60" id="student_num">--</td>
+				<td width="60" id="feedback_num">--</td>
+			</tr>
+		</table>
+	</div>
+	<script src="../js/jquery-3.7.0.min.js" type="text/javascript"></script>
+	<script src="../js/chart.umd.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../js/statistic_feedback.js"></script>
+</body>
+</html>
